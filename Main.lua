@@ -2,6 +2,8 @@ local Workspace = game:GetService("Workspace")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
 --cached funcs--
 local Spawn = task.spawn
 local Wait = task.wait
@@ -25,7 +27,6 @@ local Slots = SelfBase.Slots
 
 local Gaps = workspace.Misc.Gaps
 
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "Max | Escape Tsunami For Brainrots",
