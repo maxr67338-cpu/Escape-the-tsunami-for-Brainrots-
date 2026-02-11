@@ -1,30 +1,3 @@
-local Workspace = game:GetService("Workspace")
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
-
---cached funcs--
-local Spawn = task.spawn
-local Wait = task.wait
-local Match = string.match
-local Normalize = vector.normalize
-local Magnitude = vector.magnitude
-local Tick = tick()
-local Floor = math.floor
-local FireTouchInterest = firetouchinterest
-local FireProximityPrompt = fireproximityprompt
---cached funcs--
-
-local Bases = Workspace:FindFirstChild("Bases") or Workspace:FindFirstChild("Bases_NEW")
-local SelfBase
-for i, v in (Bases:GetChildren()) do
-    if v:GetAttribute("Holder") == LocalPlayer.UserId then
-        SelfBase = v
-    end
-end
-local Slots = SelfBase.Slots
-
-local Gaps = workspace.Misc.Gaps
-
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
